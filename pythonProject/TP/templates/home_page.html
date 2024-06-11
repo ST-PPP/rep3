@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% block content %}
+
+<table>
+{%for i in data%}
+    <tr>
+        <td> {{i.column1}} </td> <td> {{i.column2}} </td> <td> {{i.column3}} </td> <td> {{i.user.all.count}} </td> <td> {{i.user.all}} </td>
+    </tr>
+{%endfor%}
+</table>
+{% endblock %}
+</body>
+</html>
